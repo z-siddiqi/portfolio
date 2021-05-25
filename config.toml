@@ -1,3 +1,81 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.zainuddinsiddiqi.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "zainuddinsiddiqi"
+theme = "PaperMod"
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+paginate = 10
+paginatePath = "blog"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+description = "Software Engineer"
+author = "Zainuddin Siddiqi"
+ShowPostNavLinks = true
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowShareButtons = true
+ShowReadingTime = true
+displayFullLangName = true
+images = [ "profile.png" ]
+
+  [params.profileMode]
+  enabled = true
+  title = "Zainuddin Siddiqi"
+  imageUrl = "profile.png"
+  imageTitle = "Zainuddin Siddiqi's profile picture"
+  imageWidth = 120
+  imageHeight = 120
+
+  [[params.socialIcons]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/z-siddiqi/"
+
+  [[params.socialIcons]]
+  name = "Github"
+  url = "https://github.com/z-siddiqi"
+
+  [[params.socialIcons]]
+  name = "Twitter"
+  url = "https://twitter.com/zainuddinsidd"
+
+[taxonomies]
+category = "categories"
+post = "posts"
+
+[[menu.main]]
+identifier = "aboutme"
+name = "about me"
+url = "/about"
+weight = 1
+
+[[menu.main]]
+identifier = "blog"
+name = "blog"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+identifier = "categories"
+name = "categories"
+url = "/categories"
+weight = 3
+
+[[menu.main]]
+identifier = "notes"
+name = "notes"
+url = "https://www.notion.so/83937192577a4476a2d97d66f9dc3c4c?v=ce4f2e3589164e529b35c91698d112c1"
+weight = 4
