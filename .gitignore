@@ -1,2 +1,26 @@
-public
-resources
+# generated files
+package/generated*
+
+# installed npm modules
+node_modules/
+
+# build tool output, e.g. code coverage
+.nyc_output/
+coverage/
+
+# API documentation
+api-docs/
+
+# folders from source code editors
+.vscode
+.idea
+
+# eleventy output when doing manual tests
+_site/
+
+# lock file
+package-lock.json
+
+# test files
+.cache
+test/stubs-layout-cache/_includes/*.js

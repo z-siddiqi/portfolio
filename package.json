@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z-siddiqi/portfolio.git"
+  },
+  "author": "Zainuddin Siddiqi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/z-siddiqi/portfolio/issues"
+  },
+  "homepage": "https://github.com/z-siddiqi/portfolio#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
