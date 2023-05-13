@@ -11,8 +11,6 @@
 	<body class="font-sans max-w-3xl min-h-screen m-auto px-7 [&>*:not(:last-child)]:mb-20">
 		{% include "../components/navigation.njk" %}
 		{{ content | safe }}
-		<footer>
-			&copy; Copyright {{ metadata.copyrightYear }} {{ metadata.author }}
-		</footer>
+		{% include "../components/footer.njk" %}
 	</body>
 </html>
